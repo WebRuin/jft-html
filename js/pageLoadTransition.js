@@ -53,3 +53,4 @@ window.addEventListener("scroll", function() {
     remove_class_on_scroll();
   }
 });
+const hi = 2;
