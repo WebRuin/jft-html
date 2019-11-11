@@ -69,11 +69,11 @@ header .nav .social .social-link-icons {
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 .show {
-  display: inline-block;
+  display: inline-block !important;
 }
 
 .loaded-menu,
