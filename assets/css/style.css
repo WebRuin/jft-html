@@ -114,7 +114,7 @@ header .nav .logo {
   width: 100px;
   opacity: 0.25;
   margin-top: 100px;
-  margin-left: -81.5px;
+  margin-left: -42px;
   color: var(--text);
   padding: 0.5rem;
   text-transform: uppercase;
@@ -145,6 +145,76 @@ header .nav .logo span {
 }
 
 @media screen and (max-width: 360px) {
+  header .nav {
+    height: auto !important;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  header .nav .social li {
+    margin-right: 0 !important;
+  }
+
+  header .nav .menu li a,
+  header .nav .social li a {
+    padding: 0.5rem;
+    font-size: var(--small-device-text-size);
+  }
+
+  .nav-fadeIn {
+    top: 0;
+    height: 25px !important;
+  }
+
+  header .nav .logo {
+    order: -1;
+    width: var(--full-width);
+    margin-left: 0 !important;
+    position: initial !important;
+  }
+
+  .logo-span-fadeIn {
+    margin-left: 0.3rem !important;
+    font-size: 1.2rem !important;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  header .nav {
+    height: auto !important;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  header .nav .social li {
+    margin-right: 0 !important;
+  }
+
+  header .nav .menu li a,
+  header .nav .social li a {
+    padding: 0.5rem;
+    font-size: var(--small-device-text-size);
+  }
+
+  .nav-fadeIn {
+    top: 0;
+    height: 25px !important;
+  }
+
+  header .nav .logo {
+    order: -1;
+    width: var(--full-width);
+    margin-left: 0 !important;
+    position: initial !important;
+  }
+
+  .logo-span-fadeIn {
+    margin-left: 0.3rem !important;
+    font-size: 1.2rem !important;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   header .nav {
     height: auto !important;
     flex-wrap: wrap;
@@ -213,5 +283,108 @@ header .nav .logo span {
 */
 
 .main-content {
-  height: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  background: var(--highlight);
+}
+
+.main-content h3 {
+  font-size: 2rem;
+}
+
+.main-content p {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+}
+
+/*
+  Footer
+*/
+
+footer {
+  background: var(--secondary);
+}
+
+footer h3 {
+  color: var(--text);
+  padding: 1rem 2rem;
+}
+
+footer .buttonBox {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer ul {
+  height: 100%;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+footer ul li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer ul li a {
+  width: 100%;
+  color: #f2d8c2;
+  font-weight: bolder;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer ul li a:hover {
+  color: #2b3240;
+  background: #f2b66d;
+}
+
+footer ul li a span:hover {
+  color: var(--secondary);
+  background: #f2b66d;
+}
+
+footer ul li a span {
+  width: 25%;
+  height: 100px;
+  display: flex;
+  color: var(--text);
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 360px) {
+  footer {
+    height: auto;
+  }
+  footer ul {
+    flex-wrap: wrap;
+  }
+
+  footer ul li {
+    width: 50%;
+  }
+
+  footer ul li a {
+    font-size: 0.8rem;
+  }
+
+  footer ul li a span {
+    padding: 1.25rem;
+  }
 }
